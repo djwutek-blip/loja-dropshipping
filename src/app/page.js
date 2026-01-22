@@ -20,18 +20,25 @@ export default function PaginaVenda() {
       </div>
 
       {/* FOTO DO PRODUTO (Link de alta qualidade) */}
-      <section className="relative w-full h-[450px] bg-gray-200">
+      <section className="space-y-2">
         <img 
-          src="https://images.pexels.com" 
-          alt="Roupa Chinesa Trend"
-          className="w-full h-full object-cover"
-          onLoad={() => console.log("Imagem carregada")}
+          src="https://images.unsplash.com" 
+          alt="Foto principal"
+          className="w-full aspect-[3/4] object-cover rounded-b-3xl shadow-sm"
         />
-        <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold shadow-sm">
-          🔥 +127 vendidos nas últimas 24h
+        <div className="flex gap-2 px-4">
+          <img 
+            src="https://images.unsplash.com" 
+            alt="Detalhe 1"
+            className="w-1/2 aspect-square object-cover rounded-xl border border-slate-100"
+          />
+          <img 
+            src="https://images.unsplash.com" 
+            alt="Detalhe 2"
+            className="w-1/2 aspect-square object-cover rounded-xl border border-slate-100"
+          />
         </div>
       </section>
-
       {/* DETALHES DE VENDA */}
       <section className="p-6 space-y-4">
         <h1 className="text-2xl font-black uppercase tracking-tighter">Conjunto Streetwear Neo-Classic</h1>
