@@ -1,3 +1,10 @@
+"use client"; // <--- ADICIONA ESTA LINHA AQUI
+
+import React, { useState, useEffect } from 'react';
+
+export default function PaginaVenda() {
+  // ... resto do teu código igual ...
+
 import React, { useState, useEffect } from 'react';
 
 export default function PaginaVenda() {
